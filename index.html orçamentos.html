@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento Pessoal</title>
+    <link rel="stylesheet" href="style.css orçamento pessoal.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Orçamento Pessoal</h2>
+        <form id="form">
+            <label for="tipo">Tipo:</label>
+            <select id="tipo">
+                <option value="receita">Receita</option>
+                <option value="despesa">Despesa</option>
+            </select>
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" required>
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" required>
+            <input type="submit" value="Adicionar Transação">
+        </form>
+        <h3>Receitas</h3>
+        <ul id="receitas-tabela"></ul>
+        <h3>Despesas</h3>
+        <ul id="despesas-tabela"></ul>
+        <div class="total">Saldo: R$ <span id="saldo">0.00</span></div>
+        <button id="reiniciar">Reiniciar</button>
+    </div>
+
+    <script src="app.js orçamentos.js"></script>
+</body>
+</html>
+
+
+
+
+
